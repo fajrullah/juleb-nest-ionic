@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     ports:
-      - "8080:3000"
+      - "3000:3001"
     environment:
       - DB_URL=mongodb://db_mongo
     volumes:
