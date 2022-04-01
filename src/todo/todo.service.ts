@@ -12,7 +12,7 @@ export class TodoService {
   ) {}
 
   async findAll(): Promise<Todo[]> {
-    return await this.model.find().exec();
+    return await this.model.find().sort({ createdAt: 'desc' }).exec();
   }
 
   async findOne(id: string): Promise<Todo> {
