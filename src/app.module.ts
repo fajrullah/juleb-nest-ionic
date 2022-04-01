@@ -5,10 +5,7 @@ import { AppService } from './app.service';
 import { TodoModule } from './todo/todo.module';
 
 @Module({
-  imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/test'),
-    TodoModule,
-  ],
+  imports: [MongooseModule.forRoot(process.env.DB_URL), TodoModule],
   controllers: [AppController],
   providers: [AppService],
 })
