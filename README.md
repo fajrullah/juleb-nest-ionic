@@ -26,6 +26,14 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Important Routes
+
+```bash
+localhost:3000/home for FrontEnd
+localhost:3000/todos fro Backend
+```
+
+
 ## Installation
 
 ```bash
