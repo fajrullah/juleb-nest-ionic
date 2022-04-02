@@ -29,6 +29,7 @@
 ## Important Routes
 
 ```bash
+docker-compose up
 localhost:3000/home for FrontEnd
 localhost:3000/todos for Backend
 ```
